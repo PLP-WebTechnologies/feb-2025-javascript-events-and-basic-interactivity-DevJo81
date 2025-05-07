@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jae-Michelle Artwork</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">ARTWORK By Jae-Michelle</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about"target="_blank">
+            <h1>Welcome to my Art Gallery where Art and Imagination Collide🌟 </h1>
+            <p>Step into a colorful realm of boundless creativity, where every piece tells a story and every story inspires a new perspective.</p>
+            <button id="myBtn" onclick="showAlert()">Let's get artsy</button>
+        </section>
+
+        <section id="portfolio"target="_blank">
+            <h1>My Portfolio 🎨✨</h1>
+            <p>Explore my collection of unique and captivating artworks that reflect my artistic journey and passion for creativity.</p>
+            <button id="toggleBtn" onclick="toggleElement()">Hire Me</button>
+            <p id="toggleText">Click the button above to hide this text then see my latest creations and get inspired!</p>
+
+            <div id="gallery">
+                <img id="galleryImage" src="https://images.pexels.com/photos/1981468/pexels-photo-1981468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Artwork 1">
+                <br>
+                <div class="galleryControls">
+                    <button id="prevBtn">Previous</button>
+                    <button id="loadMoreBtn">Load More</button>
+                </div>
+            </div>
+            <br>
+
+            <button id="openModal">Open Modal</button>
+            <div id = "modal">
+                <h2>FAQ</h2>
+                <div class="accordion">
+                    <button class="accordionToggle">What is your artistic style?</button>
+                    <div class="accordionContent">
+                        <p>My artistic style is a blend of abstract and contemporary art, focusing on vibrant colors and unique textures.</p>
+                    </div>
+                    <button class="accordionToggle">Do you take commissions?</button>
+                    <div class="accordionContent">
+                        <p>Yes, I do take commissions! Feel free to reach out to discuss your ideas.</p>
+                        <p>Type something: <input type="text" id="keyInput"></p>
+                        <p id="keyOutput">You pressed: </p>
+                    </div>
+                </div>
+            </div>
+            <button id="closeModal">Close</button>
+        </section>
+
+        <section id="contact"target="_blank">
+            <h1>Contact Me</h1>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <p id="nameDisplay"></p>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="useremail" required><br>
+                <p id ="errorMessage"></p>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <p id="passwordError"></p>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="comments" rows="4" cols="50" placeholder="Write your comment here"></textarea>
+                <button type="submit" id="submitBtn">Send</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>@ 2025 Jae-Michelle, All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
